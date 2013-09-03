@@ -1,0 +1,22 @@
+.img-box img {
+	max-width:100%;
+	height:auto;
+}
+
+.img-box {
+	border-style: solid;
+	border-color: #33FFFF;
+	text-align: center;
+}
+
+.container h2 {
+	margin-bottom: 40px;
+}
+
+.var {
+	font-family: "Courier New";
+}
+
+#the-chosen-one {
+	border-color: #FFFF33;
+}
