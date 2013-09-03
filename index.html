@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Smooth and sensible behavior w.r.t. meta-visualization</title>
+    <title>Smooth behavior of meta-visualization with respect to hyperparameters</title>
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
-    <!--<script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>-->
+    <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
     <link rel="stylesheet" href="main.css"/>
 </head>
 <body>
     <div class="container">
-    <h2>Smooth and sensible behavior w.r.t. meta-visualization</h2>
+    <h2>Smooth behavior of meta-visualization with respect to hyperparameters</h2>
         <div class="jumbotron">
             <p>
-                The 3x3 grid below shows the displays in the "neighborhood" in the parameter space of chosen parameters in the paper. The parameters (see page 5 of the paper) include the <i>effective number of neighbors</i> (<span class="var">k</span>) in the meta-level, and the constant multiplier for the repulsion term (<span class="var">c</span>). The combination used in the paper is marked with a yellow frame.
+                The 3x3 grid below shows meta-visualizations for different choices of the two hyperparameters, the central meta-visualization (marked with a yellow frame) is the one used in the paper. Columns are different choices of the effective number of neighbors ($k$, which determines $\sigma_m$ and $\sigma_r$). Rows are different choices of the constant multiplier $c$ in the repulsion parameter $\mu$.
+            </p>
+            <p>
+                The meta-visualization changes smoothly for different hyperparameter choices. As expected, larger neighborhoods and larger repulsion multipliers reduce overlap between the mini-plots.
             </p>
         </div>
         <div class="row">
             <div class="row">
                 <div class="col-md-4 img-box">
-                    <p class="var"> c=0.01<br/>
-                    k=3</p>
+                    <p>$c=0.01$<br/>
+                    $k=3$</p>
                     <img src="img/topic-model_repulsion-multiplier=0.01_repulsion-neighbors=3_nerv-neighbors=3_seed=1638.png"/>
                 </div>
                 <div class="col-md-4 img-box">
-                    <p class="var"> c=0.01<br/>
-                    k=4</p>
+                    <p>$c=0.01$<br/>
+                    $k=4$</p>
                     <img src="img/topic-model_repulsion-multiplier=0.01_repulsion-neighbors=4_nerv-neighbors=4_seed=1638.png"/>
                 </div>
                 <div class="col-md-4 img-box">
-                    <p class="var"> c=0.01<br/>
-                    k=5</p>
+                    <p>$c=0.01$<br/>
+                    $k=5$</p>
                     <img src="img/topic-model_repulsion-multiplier=0.01_repulsion-neighbors=5_nerv-neighbors=5_seed=1638.png"/>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 img-box">
-                    <p class="var"> c=0.03<br/>
-                    k=3</p>
+                    <p>$c=0.03$<br/>
+                    $k=3$</p>
                     <img src="img/topic-model_repulsion-multiplier=0.03_repulsion-neighbors=3_nerv-neighbors=3_seed=1638.png"/>
                 </div>
                 <div class="col-md-4 img-box" id="the-chosen-one">
-                    <p class="var"> c=0.03<br/>
-                    k=4</p>
+                    <p>$c=0.03$<br/>
+                    $k=4$</p>
                     <img src="img/topic-model_repulsion-multiplier=0.03_repulsion-neighbors=4_nerv-neighbors=4_seed=1638.png"/>
                 </div>
                 <div class="col-md-4 img-box">
-                    <p class="var"> c=0.03<br/>
-                    k=5</p>
+                    <p>$c=0.03$<br/>
+                    $k=5$</p>
                     <img src="img/topic-model_repulsion-multiplier=0.03_repulsion-neighbors=5_nerv-neighbors=5_seed=1638.png"/>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 img-box">
-                    <p class="var"> c=0.1<br/>
-                    k=3</p>
+                    <p>$c=0.1$<br/>
+                    $k=3$</p>
                     <img src="img/topic-model_repulsion-multiplier=0.1_repulsion-neighbors=3_nerv-neighbors=3_seed=1638.png"/>
                 </div>
                 <div class="col-md-4 img-box">
-                    <p class="var"> c=0.1<br/>
-                    k=4</p>
+                    <p>$c=0.1$<br/>
+                    $k=4$</p>
                     <img src="img/topic-model_repulsion-multiplier=0.1_repulsion-neighbors=4_nerv-neighbors=4_seed=1638.png"/>
                 </div>
                 <div class="col-md-4 img-box">
-                    <p class="var"> c=0.1<br/>
-                    k=5</p>
+                    <p>$c=0.1$<br/>
+                    $k=5$</p>
                     <img src="img/topic-model_repulsion-multiplier=0.1_repulsion-neighbors=5_nerv-neighbors=5_seed=1638.png"/>
                 </div>
             </div>
