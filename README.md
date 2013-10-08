@@ -1,1 +1,1 @@
-Supplement figures for the author response
+The supplementary for *Information Retrieval Perspective to Meta-visualization*.
